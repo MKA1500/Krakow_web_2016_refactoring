@@ -11,11 +11,6 @@ body {
 	margin: 0 auto;
 }
 
-.wrapper {
-	max-width: 960px;
-	height: auto;
-}
-
  h1 {
 	text-align: center;
 	font-size: 180%;
@@ -29,11 +24,50 @@ h1#welcome {
 	padding: 35px 20px 20px 0;
 }
 
+a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.active {
+	color: #00FF00;	
+}
+
 img {
 	text-align: center;
-	max-width: 100%;
+    max-width: 100%;
 	height: auto;
 	width: auto;
+}
+
+img.big-pictures {
+	float: left;
+	text-align: center;
+    margin-left: 0 auto;
+    margin-right: 0 auto;	
+}
+
+#big-one {
+	display: block;
+}
+
+#big-two {
+	display: none;	
+}
+
+#big-three {
+	display: none;	
+}
+
+#big-four {
+	display: none;	
+}
+
+main {
+	max-width: 960px;
+	height: auto; 
+	margin-top: -200px;
 }
 
 .round-image {
@@ -42,15 +76,6 @@ img {
 	border-radius: 100px;
 }
 
-a {
-	color: #FFFFFF;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-a:hover {
-	color: #FFFF00;
-}
 
 header {
 	background: #405580;
@@ -60,7 +85,7 @@ header {
 	top: 0;
 	left: 0;
 	z-index: 100;
-	opacity: 0.90;
+	opacity: 0.6;
 }
 
 h2, h3 {
@@ -105,73 +130,8 @@ nav ul li {
 }
 
 .hamburger-icon:hover {
-	fill: #FFFF00;
+	fill: #00FF00;
 }
-
-#doc {
-	margin: 40px 0; /* dopasować do header fixed */
-}
-
-#content {
-	margin: 0 auto;
-	max-width: 1140px;
-}
-
-.blueberry {
-	max-width: 960px;
-	margin-top: 110px;
-}
-
-/*  jQuery Blueberry Slider v0.4 BETA http://marktyrrell.com/labs/blueberry/ */
-
-.blueberry .slides {
-	display: block;
-	position: relative;
-	overflow: hidden;
-}
-.blueberry .slides li {
-	position: absolute;
-	top: 0;
-	left: 0;
-	overflow: hidden;
-}
-.blueberry .slides li img {
-	display: block;
-	width: 100%;
-	max-width: none;
-}
-.blueberry .slides li.active { display: block; position: relative; }
-.blueberry .crop li img { width: auto; }
-
-.blueberry .pager {
-	height: 40px;
-	text-align: center;
-}
-.blueberry .pager li { display: inline-block; }
-.blueberry .pager li a,
-.blueberry .pager li a span {
-	display: block;
-	height: 4px;
-	width: 4px;
-}
-.blueberry .pager li a {
-	padding: 18px 8px;
--webkit-border-radius: 6px;
-   -moz-border-radius: 6px;
-	border-radius: 6px;
-}
-.blueberry .pager li a span {
-	overflow: hidden;
-	background: #c0c0c0;
-	text-indent: -9999px;
--webkit-border-radius: 2px;
-   -moz-border-radius: 2px;
-	border-radius: 2px;
-}
-.blueberry .pager li.active a span { background: #404040; }
-
-/* ------------------------------------------ */
-
 section {
 	width: 29%;
 	float: left;
@@ -181,6 +141,7 @@ section {
 
 section p {
 	padding-bottom: 15px;
+	padding-top: 10px;
 }
 
 .clear {
@@ -254,10 +215,15 @@ p#copyright {
 	font-size: 80%;
 }
 
-@media (max-width: 740px) {
-	header {
-		position: absolute;
-	}	
+@media (max-width: 940px) {
+	img.big-pictures {
+	    max-width: 940px;
+		margin: 0 auto;
+		text-align: center;
+    }
+}
+
+@media (max-width: 740px) {	
 	
 	svg.hamburger-icon {
 		display: inline-block;
@@ -298,6 +264,11 @@ p#copyright {
 		width: 100%;
 		margin: 0;
 		padding: 0;
+	}
+	
+	p {
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 }
 
