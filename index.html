@@ -9,30 +9,21 @@
   <link rel="stylesheet" href="main.css" media="screen">
   <meta name="viewport" content="width=device-width">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-<script src="jquery.blueberry.js"></script>
-  
-<script>
-$(window).load(function() {
-	$('.blueberry').blueberry();
-});
-</script>
-
   </head>
   
   <body>
   
-  <div class="wrapper">
+
     <header>
 	  <div class="inner-header">
 	  <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/POL_Krak%C3%B3w_COA.svg/2000px-POL_Krak%C3%B3w_COA.svg.png" id="herb-header" /></a>
 	  <h1 id="welcome">Welcome to Krakow</h1>
 	  <nav>
 		<ul>
-		  <li><a href="#" class="current">Visit</a></li>
-		  <li><a href="#" class="current">Culture</a></li>
-		  <li><a href="#" class="current">Business</a></li>
-		  <li><a href="#" class="current">Study</a></li>
-		  <li><a href="#" class="current">Night Life</a></li>
+		  <li><a href="#" id="visit">Visit</a></li>
+		  <li><a href="#" id="culture">Culture</a></li>
+		  <li><a href="#" id="study">Study</a></li>
+		  <li><a href="#" id="night-life">Night Life</a></li>
 		</ul>
 		<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="32.833px" height="32.833px" viewBox="0 0 92.833 92.833" style="enable-background:new 0 0 92.833 92.833;"
@@ -48,35 +39,32 @@ $(window).load(function() {
 	  </div>  
 	</header>
 	
-	<div id="doc">
-	  <div id="content">
-	    <div class="blueberry">
-		  <ul class="slides">
-		    <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Rynek_Glowny_w_Krakowie.jpg/1024px-Rynek_Glowny_w_Krakowie.jpg" /></li>
-			<li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/XII%2C_XIV%2C_XIX%2C_Krak%C3%B3w.jpg/1024px-XII%2C_XIV%2C_XIX%2C_Krak%C3%B3w.jpg" /></li>
-			<li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Krak%C3%B3w_Old_Town_at_dusk_%289159202954%29.jpg/1024px-Krak%C3%B3w_Old_Town_at_dusk_%289159202954%29.jpg" /></li>
-			<li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Wawel_castle.jpg/1024px-Wawel_castle.jpg" /></li>
-		  </ul>
-		</div>
-	  </div>
-	</div>
-	
+		  <div class="slider">
+		    <div id="big-one"><img src="big-krak-1.jpg" class="big-pictures" /></div>
+			<div id="big-two"><img src="big-krak-4.jpg" class="big-pictures" /></div>
+			<div id="big-three"><img src="big-krak-2.jpg" class="big-pictures" /></div>
+			<div id="big-four"><img src="big-krak-3.jpg" class="big-pictures" /></div>
+		  </div>
+
+  <div class="clear"></div>
+
+  <main>	
 	<section>
 	   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Sukiennice_and_Main_Market_Square_Krakow_Poland.JPG/320px-Sukiennice_and_Main_Market_Square_Krakow_Poland.JPG" class="round-image" />
 	   <h2>Vibrant Krakow</h2>
-	   <p>Krakow is the second largest and one of the oldest cities in Poland. Situated on the Vistula River in the Lesser Poland region, the city dates back to the 7th century. Kraków has traditionally been one of the leading centres of Polish academic, cultural, and artistic life and is one of Poland's most important economic hubs. The city has a population of approximately 760,000, with approximately 8 million additional people living within a 100 km (62 mi) radius of its main square.</p>
+	   <p>Krakow is the second largest and one of the oldest cities in Poland. Situated on the Vistula River in the Lesser Poland region, the city dates back to the 7th century. Kraków has traditionally been one of the leading centres of Polish academic, cultural, and artistic life and is one of Poland's most important economic hubs</p>
 	</section>
 
 	<section>
 	   <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Wawel_end_16th_cent.jpg" class="round-image" />
 	   <h2>Capital legacy</h2>
-	   <p>It was the capital of the Crown of the Kingdom of Poland from 1038 to 1569; the Polish–Lithuanian Commonwealth from 1569 to 1596; the Free City of Kraków from 1815 to 1846; the Grand Duchy of Cracow from 1846 to 1918; and Kraków Voivodeship from the 14th century to 1998. It has been the capital of Lesser Poland Voivodeship since 1999.</p>
+	   <p>It was the capital of the Crown of the Kingdom of Poland from 1038 to 1569; the Polish–Lithuanian Commonwealth from 1569 to 1596; the Free City of Kraków from 1815 to 1846; the Grand Duchy of Cracow from 1846 to 1918; and Kraków Voivodeship from the 14th century to 1998. It has been the capital of Lesser Poland Voivodeship since 1999</p>
 	</section>
 
 	<section>
 	   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Brama_Bolechowicka_a1.jpg/320px-Brama_Bolechowicka_a1.jpg" class="round-image" />
 	   <h2>Stone Age legacy</h2>
-	   <p>The city has grown from a Stone Age settlement to Poland's second most important city. It began as a hamlet on Wawel Hill and was already being reported as a busy trading centre of Slavonic Europe in 965. With the establishment of new universities and cultural venues at the emergence of the Second Polish Republic in 1918 and throughout the 20th century, Kraków reaffirmed its role as a major national academic and artistic centre.</p>
+	   <p>The city has grown from a Stone Age settlement to Poland's second most important city. It began as a hamlet on Wawel Hill and was already being reported as a busy trading centre of Slavonic Europe in 965. Throughout the 20th century, Kraków reaffirmed its role as a major national academic and artistic centre</p>
 	</section>	
 	
 	<div class="clear"></div>
@@ -94,25 +82,26 @@ $(window).load(function() {
 
 	<section>
 	   <h3>Wawel Castle</h3>
-	   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Wawel_Krakow_June_2006-2.jpg/640px-Wawel_Krakow_June_2006-2.jpg" />
+	   <img src="wawel.jpg" />
 	   <p>The Gothic Wawel Castle in Kraków in Poland was built at the behest of Casimir III the Great, who reigned from 1333 to 1370, and consists of a number of structures situated around the central courtyard.</p>
 	</section>	
 	
 	<section>
 	   <h3>Ojców National Park</h3>
-	   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bia%C5%82a_R%C4%99ka_Ojcowski_PN.jpg/640px-Bia%C5%82a_R%C4%99ka_Ojcowski_PN.jpg" />
+	   <img src="ojcow.jpg" />
 	   <p>The park contains numerous castles, including a ruined Gothic castle at Ojców and a better-preserved Renaissance castle at Pieskowa Skała, both of which were part of a late-medieval system of defenses in southwestern Poland, known as the Trail of the Eagles' Nests.</p>
 	</section>	
 	
 	<section>
 	   <h3>Wieliczka Salt Mine</h3>
-	   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Wieliczka_salt_mine.jpg/640px-Wieliczka_salt_mine.jpg" />
+	   <img src="wieliczka.jpg" />
 	   <p>Wieliczka in southern Poland lies within the Kraków metropolitan area. Opened in the 13th century, the mine produced table salt continuously until 2007, as one of the world's oldest salt mines in operation.</p>
 	</section>	
 
 	<div class="clear"></div>
 	
-  </div>
+  </main>
+  
 	<footer>
 	 <div class="footer-wrapper">
 	  <section class="foot-sec">
@@ -147,5 +136,7 @@ $(window).load(function() {
 	 </div>  
 	</footer>
 
+<script src="krakow.js"></script>
+	
   </body>
 </html>
