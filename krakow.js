@@ -1,4 +1,3 @@
-
  $(document).ready(function() {
   
     $('a').hover(function(){
@@ -13,7 +12,7 @@
     
      $("#visit").css("color", "#FFFF00");    
 	
-    $("#culture").bind('click', function () {
+    $("#culture").bind('click', function callCulture() {
 		if(view == 0) {
 		   $("#big-one").fadeTo( "slow", 0 ).css("display", "none");		
 		   $("#big-two").css("display", "block").fadeTo( "slow", 1 );	
@@ -35,7 +34,7 @@
 	view = 1;	 
 	});	
 
-    $("#study").bind('click', function () {
+    $("#study").bind('click', function callStudy() {
 		if(view == 0) {
 		   $("#big-one").fadeTo( "slow", 0 ).css("display", "none");		
 		   $("#big-three").css("display", "block").fadeTo( "slow", 1 );	
@@ -57,7 +56,7 @@
 	view = 2;	 
 	});	
 	
-    $("#night-life").bind('click', function () {
+    $("#night-life").bind('click', function CallNight() {
 		if(view == 0) {
 		   $("#big-one").fadeTo( "slow", 0 ).css("display", "none");		
 		   $("#big-four").css("display", "block").fadeTo( "slow", 1 );	
@@ -83,7 +82,7 @@
 	// 1 == culture, big-two; 
 	// 2 == study, big-three; 
 	// 3 == night life, big-four;
-    $("#visit").bind('click', function () {
+    $("#visit").bind('click', function callVisit() {
 		if(view == 1) {
 		   $("#big-two").fadeTo( "slow", 0 ).css("display", "none");		
 		   $("#big-one").css("display", "block").fadeTo( "slow", 1 );	
@@ -103,4 +102,10 @@
 		} 
 	view = 0;	 
 	});	
+	
+
+	
+	
+	
+	
 });
