@@ -37,9 +37,11 @@ a {
 }
 
 #big-one, #big-two, #big-three, #big-four {
-    background-position: center; 
+    position: relative;
+	background-position: center; 
 	overflow: hidden;
     margin-bottom: 15px;	
+	max-height: 100vh;
 }
 
 iframe#the-movie {
@@ -65,20 +67,45 @@ img.big-pictures {
     margin-left: 0 auto;
     margin-right: 0 auto;	
 }
-/*
+
 .inter-one {
     position: absolute;
-    margin-top: 200px;
-	margin-left: 200px;
+    width: 80%;
+    height: auto;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 55vh;
+	margin-bottom: 10vh;
 	max-width: 960px;
-	background-color: #FFFFFF;
-	padding: 20px;
-	opacity: 0.5;
 }
 
-.inter-one-one p.header-p {
+#inter-one-1, #inter-one-2, #inter-one-3 {
+    float: left;
+	width: 27%;
+	height: auto;
+	margin: 0% 3% 0 3%;
+	text-align: center;
+    background-color: #FFFFFF;
+	opacity: 0;
+	padding: 10px;
+	border-radius: 10px;
+	} 
 
-}   */
+#inter-one-1 h2, 
+#inter-one-2 h2, 
+#inter-one-3 h2 {
+	font-weight: bold;	
+	padding: 15px;
+}
+
+#inter-one-1 h2:hover, 
+#inter-one-2 h2:hover, 
+#inter-one-3 h2:hover {
+    color: #00FF00;
+}
+
 
 main {
 	max-width: 960px;
@@ -242,9 +269,29 @@ p#copyright {
 		margin: 0 auto;
 		text-align: center;
     }
+	
+#inter-one-1 p, 
+#inter-one-2 p, 
+#inter-one-3 p {
+	display: none;
+}
+
+#inter-one-1 h2, 
+#inter-one-2 h2, 
+#inter-one-3 h2 {
+	padding: 5px;
+}
+	
 }
 
 @media (max-width: 740px) {	
+
+#inter-one-1, #inter-one-2, #inter-one-3 {
+        display: block;
+		width: 100%;
+		border-radius: 0px;
+		margin: 0 0 2px 0;
+}
 	
 	svg.hamburger-icon {
 		display: inline-block;
