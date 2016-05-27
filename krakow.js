@@ -10,7 +10,11 @@
 	$("#big-three").css("opacity", 0 ).css("display", "none"); 
     $("#big-four").css("opacity", 0 ).css("display", "none");
     
-     $("#visit").css("color", "#FFFF00");    
+    $("#visit").css("color", "#FFFF00");
+
+    $("#inter-one-1").delay(2000).fadeTo( "slow", 0.8 ).fadeTo( "slow", 0.5 );	
+    $("#inter-one-2").delay(2500).fadeTo( "slow", 0.8 ).fadeTo( "slow", 0.5 );		
+    $("#inter-one-3").delay(3000).fadeTo( "slow", 0.8 ).fadeTo( "slow", 0.5 );	
 	
     $("#culture").bind('click', function callCulture() {
 		if(view == 0) {
