@@ -1,7 +1,4 @@
- 
- 
- 
- $(document).ready(function() {
+  $(document).ready(function() {
   
     $('a').hover(function(){
 	  $(this).toggleClass("teraz");
@@ -15,9 +12,9 @@
     
     $("#visit").css("color", "#FFFF00");
 
-    $("#inter-one-1").delay(2000).fadeTo( "slow", 0.8 ).fadeTo( "slow", 0.5 );	
-    $("#inter-one-2").delay(2500).fadeTo( "slow", 0.8 ).fadeTo( "slow", 0.5 );		
-    $("#inter-one-3").delay(3000).fadeTo( "slow", 0.8 ).fadeTo( "slow", 0.5 );	
+    $("#inter-one-1").delay(2000).fadeTo( "slow", 0.9 ).fadeTo( "slow", 0.6 );	
+    $("#inter-one-2").delay(2500).fadeTo( "slow", 0.9 ).fadeTo( "slow", 0.6 );		
+    $("#inter-one-3").delay(3000).fadeTo( "slow", 0.9 ).fadeTo( "slow", 0.6 );	
 	
     $("#culture").bind('click', function callCulture() {
 		if(view == 0) {
