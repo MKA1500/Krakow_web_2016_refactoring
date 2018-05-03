@@ -1,0 +1,23 @@
+{
+  "name": "welcome_to_krakow_rwd",
+  "version": "1.0.0",
+  "description": "experiments from May 2016, reissued for fun in May 2018... 1. adding Socket.io chat module for further implementation to this site - under construction... 2. turning my early 'box model' to Bootstrap 4 & flex blox 3. trying to keep my initial 'design' in refactored site 4. current slider to be replaced",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MKA1500/Krakow_web_2016_refactoring.git"
+  },
+  "author": "Maciej Kabsch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MKA1500/Welcome_to_Krakow_RWD/issues"
+  },
+  "homepage": "https://github.com/MKA1500/Welcome_to_Krakow_RWD#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {}
+}
