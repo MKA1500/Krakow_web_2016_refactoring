@@ -1,4 +1,5 @@
 var express = require('express');
+var socket = require('socket.io');
 // app setup:
 var app = express();
 var server = app.listen(4000, function(){
@@ -6,3 +7,8 @@ var server = app.listen(4000, function(){
 });
 // static files:
 app.use(express.static('./'));
+// socket setup:
+var io = socket(server);
+io.on('connection', function(socket){
+  console.log('socket is connected', socket.id);
+});
