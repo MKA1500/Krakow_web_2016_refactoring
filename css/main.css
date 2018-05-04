@@ -108,6 +108,29 @@ nav ul li {
 .hamburger-icon:hover {
 	fill: #00FF00;
 }
+.svg-container {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+.svg-container svg#Layer_1 {
+	height: 60vh;
+	display: block;
+	margin: 0 auto;
+	stroke-dasharray: 1200;
+	stroke-dashoffset: 0;
+	-webkit-animation: dash 4s linear forwards;
+	-o-animation: dash 4s linear forwards;
+	-moz-animation: dash 4s linear forwards;
+	animation: dash 4s linear forwards;
+}
+@-webkit-keyframes dash {
+	from {
+		stroke-dashoffset: 1200;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+}
 footer {
 	background: #333333;
 	width: 100%;

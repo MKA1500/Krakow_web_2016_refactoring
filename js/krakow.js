@@ -1,3 +1,4 @@
+/*
 (function () {
   var myCenter=new google.maps.LatLng(50.061742,19.940650);
 
@@ -26,3 +27,4 @@
 
   google.maps.event.addDomListener(window, 'load', initialize);
 })();
+*/
