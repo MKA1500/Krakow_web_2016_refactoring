@@ -33,6 +33,23 @@ a:hover {
   max-height: 100vh;
 	text-align: center;
 }
+#KrakowSpeedDatingChat {
+	position: absolute;
+	width: 46rem;
+	left: 50%;
+	margin-left: -23rem;
+	top: 10rem;
+	height: calc(100vh - 15.5rem);
+	background: rgba(51, 51, 51, 0.6);
+	border-radius: 0.5rem;
+	border: 1px solid rgba(255,255,255,0.7);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+#Output p {
+	color: #FFF;
+}
 iframe#the-movie {
 	poition: abolute;
 	top: 50%;

@@ -11,4 +11,9 @@ app.use(express.static('./'));
 var io = socket(server);
 io.on('connection', function(socket){
   console.log('socket is connected', socket.id);
+
+  socket.on('chat-message', function(data){
+    // reffering to all sockets connected to the server:
+    io.sockets.emit('chat-message', data);
+  });
 });
