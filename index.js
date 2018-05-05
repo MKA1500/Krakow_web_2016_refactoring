@@ -11,9 +11,13 @@ app.use(express.static('./'));
 var io = socket(server);
 io.on('connection', function(socket){
   console.log('socket is connected', socket.id);
-
+// handle chat events:
   socket.on('chat-message', function(data){
     // reffering to all sockets connected to the server:
     io.sockets.emit('chat-message', data);
+  });
+  
+  socket.on('typing', function(data){
+    socket.broadcast.emit('typing', data);
   });
 });

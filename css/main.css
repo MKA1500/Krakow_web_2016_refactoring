@@ -46,6 +46,7 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+	overflow-y: hidden;
 }
 #Output p {
 	color: #FFF;
